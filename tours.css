@@ -1,0 +1,361 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #ececec;
+}
+
+.logo_name {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo_name img {
+    height: 50px;
+    width: 50px;
+}
+
+.logo_name h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.contact_us,
+.log_in {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.all {
+    padding-top: 50px;
+}
+.main_screen {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px auto;
+    background-image: url('resources/tours.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #ececec;
+}
+
+.main_photo {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+
+.main_screen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.search {
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+    background-color: #ececec;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-gap: 8px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.034);
+    z-index: 10;
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+.search input[type="text"],
+select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button.search_now_button {
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.search_now_button {
+    transition: background-color 0.3s ease;
+}
+
+button.search_now_button:hover {
+    background-color: #cfcece;
+}
+
+
+.all_tours {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    min-height: auto; 
+
+}
+
+.all_tours h3 {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.all_tours aside {
+    background-color: #ececec;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.main_all_tours {
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+}
+
+.main_all_tours h3 {
+    font-size: 20px;
+}
+
+.tours_for_you {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tour_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tour_item img {
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    object-fit: cover;
+}
+
+.tour_item h3,
+.tour_item p {
+    font-size: 16px;
+    padding-top: 0px;
+    margin: 5px 0;
+}
+
+.tour_item p {
+    font-size: 12px;
+}
+
+.slider {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.slider-indicator {
+    padding-left: 50px;
+}
+
+.slick-prev,
+.slick-next {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    color: black;
+}
+
+.articles {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.article {
+    margin-bottom: 10px;
+}
+
+.article a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.article a:hover {
+    text-decoration: underline;
+}
+
+.contact_us_div {
+    padding: 20px;
+    background-color: rgb(29, 28, 28);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+}
+
+.info {
+    padding: 20px;
+    color: white;
+    background-color: #333;
+}
+
+h2,
+h4 {
+    margin-bottom: 15px;
+}
+
+.info input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.info input:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+.info button {
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info button {
+    transition: background-color 0.3s ease;
+}
+.info button:hover {
+    background-color: #cfcece;
+}
+
+.map {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 992px) {
+    .search {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .tours_for_you {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact_us_div {
+        grid-template-columns: 1fr;
+    }
+
+    .all_tours {
+        grid-template-columns: 1fr;
+    }
+
+    .all_tours aside {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main_screen {
+        grid-template-rows: auto 75px;
+        min-height: 300px;
+    }
+    .tours_for_you {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        padding: 20px;
+    }
+
+    .main_photo h2 {
+        font-size: 1.5em;
+        margin-top: 150px;
+    }
+
+    .all_tours {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    .search {
+        grid-template-columns: 1fr;
+        margin-top: -100px;
+    }
+}
+@media (max-width: 576px) {
+    .logo_name h1 {
+        font-size: 1.5em;
+    }
+    .all_tours aside {
+        width: 100%;
+    }
+}

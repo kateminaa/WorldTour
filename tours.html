@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tours.css">
+    <title>WorldTour</title>
+</head>
+<body>
+    <header>
+        <div class="logo_name">
+            <img src="/resources/logo.png" alt="Логотип">
+            <h1>WorldTour</h1>
+        </div>
+        <nav>
+            <a href="#contact_us_div" class="contact_us">Контакты</a>
+            <a href="/auth.html" class="log_in">Вход</a>
+        </nav>
+    </header>
+    <div class="all">
+        <div class="main_screen">
+            <div class="search">
+                <div>
+                    <select id="country" name="country">
+                        <option value="select_country">Выбери страну...</option>
+                    </select>
+                </div>
+                <div>
+                    <select id="category" name="category">
+                        <option value="select_category">Выбери категорию...</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="search_now_button">Поиск</button>
+                </div>
+            </div>
+        </div>
+        <div class="all_tours">
+            <aside>
+                <h3>Полезные статьи для путешественников</h3>
+                <div class="articles">
+                    <div class="article">
+                        <a href="https://example.com/article1" target="_blank">1. Советы по путешествиям</a>
+                    </div>
+                    <div class="article">
+                        <a href="https://example.com/article2" target="_blank">2. Как собрать чемодан</a>
+                    </div>
+                    <div class="article">
+                        <a href="https://example.com/article3" target="_blank">3. Лучшие направления для отдыха</a>
+                    </div>
+                    <div class="article">
+                        <a href="https://example.com/article4" target="_blank">4. Путешествие с детьми</a>
+                    </div>
+                    <div class="article">
+                        <a href="https://example.com/article5" target="_blank">5. Как избежать туристических ловушек</a>
+                    </div>
+                </div>
+            </aside>
+            <div class="main_all_tours">
+                <h3>Предложенные туры</h3>
+                <div class="tours_for_you">
+                    <div class="tour_item">
+                        <img src="./resources/thailand.jpg" alt="">
+                        <h3>Пхукет</h3>
+                        <p>Пхукет — популярный остров-курорт Таиланда, который славится прекрасными пляжами, живописной природой соседних островов и разнообразными развлечениями. </p>
+                    </div>
+                    <div class="tour_item">
+                        <img src="./resources/france.jpg" alt="">
+                        <h3>Париж</h3>
+                        <p>Париж — столица и крупнейший город Франции. Находится на севере государства, в центральной части Парижского бассейна, на реке Сена. </p>
+                    </div>
+                    <div class="tour_item">
+                        <img src="./resources/england.jpg" alt="">
+                        <h3>Лондон</h3>
+                        <p>Лондон — столица и крупнейший город Англии и Великобритании. Расположен на юго-востоке острова Великобритания, на равнине в устье Темзы, вблизи Северного моря. </p>
+                    </div>
+                    <div class="tour_item">
+                        <img src="./resources/russia.jpg" alt="">
+                        <h3>Москва</h3>
+                        <p>Москва — столица и крупнейший город России. Считается одним из самых красивых и комфортных мегаполисов мира. </p>
+                    </div>
+                    <div class="tour_item">
+                        <img src="./resources/egypt.jpg" alt="">
+                        <h3>Каир</h3>
+                        <p>Каир — столица Египта, крупнейший город Ближнего Востока и третий по величине город Африки.</p>
+                    </div>
+                    <div class="tour_item">
+                        <img src="./resources/italy.jpg" alt="">
+                        <h3>Венеция</h3>
+                        <p>Венеция — город на севере Италии, порт Адриатического моря. Большая часть города расположена на островах в Венецианской лагуне, которые соединены между собой огромным количеством мостов.</p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slider-indicator">Пролистывайте вправо для просмотра</div>
+                    <div class="slider_buttons">
+                        <button class="slick-prev" aria-label="Предыдущий слайд">&#10094;</button>
+                        <button class="slick-next" aria-label="Следующий слайд">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact_us_div" id="contact_us_div">
+            <div class="info">
+                <h2>Контактная информация</h2>
+                <p>Телефон: +7 (123) 456-78-90</p>
+                <p>Email: example@example.com</p>
+            
+                <form action="">
+                    <h4>Заполните поля ниже,<br> чтобы мы связались с вами</h4>
+                    <input class="your_name" type="text" placeholder="Ваше имя" required>
+                    <br>
+                    <input class="your_tel" type="tel" placeholder="+7 (123) 456-78-90" required>
+                    <br>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+            
+            <div class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A38020a94231a33f8ec69dea9e0038d5d68ca692e084398f5f2c1880e51cf2211&amp;width=700&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>   
+    </div>
+    </header>
+</body>
+</html>
