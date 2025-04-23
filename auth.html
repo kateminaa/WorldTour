@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorldTour</title>
-    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="./auth.css">
 </head>
 <body>
     <header>
         <div class="logo_name">
-            <img src="/resources/logo.png" alt="Логотип">
+            <img src="./resources/logo.png" alt="Логотип">
             <h1>WorldTour</h1>
         </div>
         <nav>
-            <a href="/index.html" class="back">Вернуться назад</a>
+            <a href="./index.html" class="back">Вернуться назад</a>
         </nav>
     </header>
     <div class="login-container">
         <h2>Вход</h2>
-        <form action="/login" method="POST">
+        <form id = 'enter_form'>
             <div class="form-group">
                 <label for="username">Имя пользователя</label>
                 <input type="text" id="username" name="username" required>
@@ -27,8 +27,11 @@
                 <label for="password">Пароль</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit" onclick="location.href='./admin.html'">Войти</button>
+            <button type="submit" >Войти</button>
         </form>
     </div>
+    <script type="module" src="./data.js" ></script>
+    <script type="module" src="./auth.js" ></script>
 </body>
+
 </html>

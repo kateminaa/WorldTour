@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="tours.css">
+    <link rel="stylesheet" href="./tours.css">
     <title>WorldTour</title>
 </head>
 <body>
     <header>
         <div class="logo_name">
-            <img src="/resources/logo.png" alt="Логотип">
+            <img src="./resources/logo.png" alt="Логотип">
             <h1>WorldTour</h1>
         </div>
         <nav>
             <a href="#contact_us_div" class="contact_us">Контакты</a>
-            <a href="/auth.html" class="log_in">Вход</a>
+            <a href="./auth.html" class="log_in">Вход</a>
         </nav>
     </header>
-    <div class="all">
+    <section>
         <div class="main_screen">
             <div class="search">
                 <div>
@@ -31,7 +31,7 @@
                     </select>
                 </div>
                 <div>
-                    <button class="search_now_button">Поиск</button>
+                    <button class="search_now_button" id="search_now_button">Поиск</button>
                 </div>
             </div>
         </div>
@@ -58,37 +58,7 @@
             </aside>
             <div class="main_all_tours">
                 <h3>Предложенные туры</h3>
-                <div class="tours_for_you">
-                    <div class="tour_item">
-                        <img src="./resources/thailand.jpg" alt="">
-                        <h3>Пхукет</h3>
-                        <p>Пхукет — популярный остров-курорт Таиланда, который славится прекрасными пляжами, живописной природой соседних островов и разнообразными развлечениями. </p>
-                    </div>
-                    <div class="tour_item">
-                        <img src="./resources/france.jpg" alt="">
-                        <h3>Париж</h3>
-                        <p>Париж — столица и крупнейший город Франции. Находится на севере государства, в центральной части Парижского бассейна, на реке Сена. </p>
-                    </div>
-                    <div class="tour_item">
-                        <img src="./resources/england.jpg" alt="">
-                        <h3>Лондон</h3>
-                        <p>Лондон — столица и крупнейший город Англии и Великобритании. Расположен на юго-востоке острова Великобритания, на равнине в устье Темзы, вблизи Северного моря. </p>
-                    </div>
-                    <div class="tour_item">
-                        <img src="./resources/russia.jpg" alt="">
-                        <h3>Москва</h3>
-                        <p>Москва — столица и крупнейший город России. Считается одним из самых красивых и комфортных мегаполисов мира. </p>
-                    </div>
-                    <div class="tour_item">
-                        <img src="./resources/egypt.jpg" alt="">
-                        <h3>Каир</h3>
-                        <p>Каир — столица Египта, крупнейший город Ближнего Востока и третий по величине город Африки.</p>
-                    </div>
-                    <div class="tour_item">
-                        <img src="./resources/italy.jpg" alt="">
-                        <h3>Венеция</h3>
-                        <p>Венеция — город на севере Италии, порт Адриатического моря. Большая часть города расположена на островах в Венецианской лагуне, которые соединены между собой огромным количеством мостов.</p>
-                    </div>
+                <div class="tours_for_you" id="tours_for_you">
                 </div>
                 <div class="slider">
                     <div class="slider-indicator">Пролистывайте вправо для просмотра</div>
@@ -119,7 +89,8 @@
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A38020a94231a33f8ec69dea9e0038d5d68ca692e084398f5f2c1880e51cf2211&amp;width=700&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
         </div>   
-    </div>
-    </header>
+    </section>
+    <script type="module" src="./data.js" ></script>
+    <script type="module" src="./tours.js"></script>
 </body>
 </html>

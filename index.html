@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>WorldTour</title>
 </head>
 <body>
     <header>
         <div class="logo_name">
-            <img src="/resources/logo.png" alt="Логотип">
+            <img src="./resources/logo.png" alt="Логотип">
             <h1>WorldTour</h1>
         </div>
         <nav>
@@ -19,72 +19,25 @@
             <a href="./auth.html" class="log_in">Вход</a>
         </nav>
     </header>
-    <div class="all">
+    <section>
         <div class="main_screen">
             <div class="main_photo">
                 <h2>Подбери идеальный тур для себя</h2>
                 <button class="more-info-button" onclick="location.href='#popular_div'">Узнайте больше</button>
             </div>
-            <div class="search">
-                <div>
-                    <select id="country" name="country">
-                        <option value="select_country">Выбери страну...</option>
-                        <option value="thailand">Таиланд</option>
-                        <option value="france">Франция</option>
-                        <option value="england">Англия</option>
-                        <option value="russia">Россия</option>
-                        <option value="egypt">Египет</option>
-                        <option value="italy">Италия</option>
-                    </select>
-                </div>
-                <div>
-                    <select id="category" name="category">
-                        <option value="select_category">Выбери категорию...</option>
-                        <option value="beach">Пляжный</option>
-                        <option value="cultural">Культурный</option>
-                        <option value="extreme">Экстремальный</option>
-                        <option value="ecological">Экологический</option>
-                        <option value="event-driven">Событийный</option>
-                    </select>
-                </div>
-                <div>
-                    <button class="search_now_button" onclick="location.href='./tours.html'">Поиск</button>
-                </div>
-            </div>
+            <form action="./tours.html" method="get" class="search">
+                <select id="country" name="country">
+                    <option value="select_country">Выбери страну...</option>
+                </select>
+                <select id="category" name="category">
+                    <option value="select_category">Выбери категорию...</option>
+                </select>
+                <button class="search_now_button" type="submit">Поиск</button>
+            </form>
         </div>
         <div class="popular_div" id="popular_div">
             <h2>Наши попуплярные направления</h2>
-            <div class="popular_box">
-                <div class="popular_items">
-                    <img src="./resources/thailand.jpg" alt="">
-                    <h3>Пхукет</h3>
-                    <p>Пхукет — популярный остров-курорт Таиланда, который славится прекрасными пляжами, живописной природой соседних островов и разнообразными развлечениями. </p>
-                </div>
-                <div class="popular_items">
-                    <img src="./resources/france.jpg" alt="">
-                    <h3>Париж</h3>
-                    <p>Париж — столица и крупнейший город Франции. Находится на севере государства, в центральной части Парижского бассейна, на реке Сена. </p>
-                </div>
-                <div class="popular_items">
-                    <img src="./resources/england.jpg" alt="">
-                    <h3>Лондон</h3>
-                    <p>Лондон — столица и крупнейший город Англии и Великобритании. Расположен на юго-востоке острова Великобритания, на равнине в устье Темзы, вблизи Северного моря. </p>
-                </div>
-                <div class="popular_items">
-                    <img src="./resources/russia.jpg" alt="">
-                    <h3>Москва</h3>
-                    <p>Москва — столица и крупнейший город России. Считается одним из самых красивых и комфортных мегаполисов мира. </p>
-                </div>
-                <div class="popular_items">
-                    <img src="./resources/egypt.jpg" alt="">
-                    <h3>Каир</h3>
-                    <p>Каир — столица Египта, крупнейший город Ближнего Востока и третий по величине город Африки.</p>
-                </div>
-                <div class="popular_items">
-                    <img src="./resources/italy.jpg" alt="">
-                    <h3>Венеция</h3>
-                    <p>Венеция — город на севере Италии, порт Адриатического моря. Большая часть города расположена на островах в Венецианской лагуне, которые соединены между собой огромным количеством мостов.</p>
-                </div>
+            <div id="popular_box" class="popular_box">              
             </div>
         </div>
         <div class="about_us_div" id="about_us_div">
@@ -140,6 +93,8 @@
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A38020a94231a33f8ec69dea9e0038d5d68ca692e084398f5f2c1880e51cf2211&amp;width=700&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
         </div>
-    </div>
+    </section>
+    <script type="module" src="./data.js" ></script>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
