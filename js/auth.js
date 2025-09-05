@@ -1,4 +1,4 @@
-import { initialAdmins} from "/data.js";
+import { initialAdmins} from "./data.js";
 async function hashPassword(password) {
     const encoder = new TextEncoder();
     const data = encoder.encode(password);

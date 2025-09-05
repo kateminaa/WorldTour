@@ -1,4 +1,4 @@
-import { initialTours } from "/data.js";
+import { initialTours } from "./data.js";
 function getParameterByName(name) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(name);

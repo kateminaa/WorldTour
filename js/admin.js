@@ -1,4 +1,4 @@
-import { initialTours, initialAdmins } from "/data.js";
+import { initialTours, initialAdmins } from "./data";
 
 let table_category = 'tours';
 

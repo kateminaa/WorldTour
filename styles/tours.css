@@ -55,7 +55,7 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 500px auto;
-    background-image: url('resources/tours.jpg');
+    background-image: url('../resources/tours.jpg');
     background-size: cover;
     background-position: center;
     background-color: #ececec;

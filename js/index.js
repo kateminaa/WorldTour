@@ -1,4 +1,4 @@
-import { initialTours } from "/data.js";
+import { initialTours } from "./data.js";
 async function init() {
     const countries = []
     initialTours.forEach(tour=>{
