@@ -15,7 +15,7 @@ export let initialTours = [
         "city": "Пхукет",
         "country": "Таиланд",
         "category": "Пляжный",
-        "img": "../resources/thailand.jpg",
+        "img": "resources/thailand.jpg",
         "description": "Пхукет — популярный остров-курорт Таиланда, который славится прекрасными пляжами, живописной природой соседних островов и разнообразными развлечениями. "
     },
     {
@@ -23,7 +23,7 @@ export let initialTours = [
         "city": "Париж",
         "country": "Франция",
         "category": "Культурный",
-        "img": "../resources/france.jpg",
+        "img": "resources/france.jpg",
         "description": "Париж — столица и крупнейший город Франции. Находится на севере государства, в центральной части Парижского бассейна, на реке Сена. "
     },
     {
@@ -31,7 +31,7 @@ export let initialTours = [
         "city": "Лондон",
         "country": "Великобритания",
         "category": "Экологический",
-        "img": "../resources/england.jpg",
+        "img": "resources/england.jpg",
         "description": "Лондон — столица и крупнейший город Англии и Великобритании. Расположен на юго-востоке острова Великобритания, на равнине в устье Темзы, вблизи Северного моря. "
     },
     {
@@ -39,7 +39,7 @@ export let initialTours = [
         "city": "Москва",
         "country": "Россия",
         "category": "Культурный",
-        "img": "../resources/russia.jpg",
+        "img": "resources/russia.jpg",
         "description": "Москва — столица и крупнейший город России. Считается одним из самых красивых и комфортных мегаполисов мира. "
     },
     {
@@ -47,7 +47,7 @@ export let initialTours = [
         "city": "Каир",
         "country": "Египет",
         "category": "Пляжный",
-        "img": "../resources/egypt.jpg",
+        "img": "resources/egypt.jpg",
         "description": "Каир — столица Египта, крупнейший город Ближнего Востока и третий по величине город Африки."
     },
     {
@@ -55,7 +55,7 @@ export let initialTours = [
         "city": "Венеция",
         "country": "Италия",
         "category": "Культурный",
-        "img": "../resources/italy.jpg",
+        "img": "resources/italy.jpg",
         "description": "Венеция — город на севере Италии, порт Адриатического моря. Большая часть города расположена на островах в Венецианской лагуне, которые соединены между собой огромным количеством мостов."
     }
 ]
